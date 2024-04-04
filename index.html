@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">  
+    <title>Todo List App in JavaScript | MSP </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Iconscout Link For Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+	<!-- App Wrapper -->
+	<main class="app">
+		<!-- Greeting -->
+		<section class="greeting">
+			<h2 class="title">
+				What's up, <input type="text" id="name" placeholder="Name here" />
+			</h2>
+		</section>
+		<!-- End of Greeting -->
+		
+		<!-- New Todo -->
+		<div class="wrapper">
+            <div class="task-input">
+              <img src="bars-icon.svg" alt="icon">
+              <input type="text" placeholder="Add a new task">
+              <button class="add-btn" onclick="add()">Add</button>
+            </div>
+            <div class="controls">
+              <div class="filters">
+                <span class="active" id="all">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+              </div>
+              <button class="clear-btn">Clear All</button>
+            </div>
+            <ul class="task-box"></ul>
+            <div class="footerhr"><hr></div>
+            <div class="footer"><p class="footer-text"><a target="_blank" href="https://myskypower.net/">VeriTech Software IT Services</a></p></div>
+        </div>
+    </main>  
+	<script src="main.js"></script>
+</body>
+</html>
